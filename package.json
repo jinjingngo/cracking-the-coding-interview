@@ -1,0 +1,27 @@
+{
+  "name": "cracking-the-coding-interview",
+  "version": "1.0.0",
+  "description": "Cracking the Coding Interview - Solutions in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charleserious/cracking-the-coding-interview.git"
+  },
+  "author": "Charles Wu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/charleserious/cracking-the-coding-interview/issues"
+  },
+  "homepage": "https://github.com/charleserious/cracking-the-coding-interview#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-transform-modules-commonjs": "^7.12.1",
+    "chai": "^4.2.0",
+    "eslint": "^7.18.0",
+    "mocha": "^8.2.1",
+    "mocha-eslint": "^7.0.0"
+  }
+}
