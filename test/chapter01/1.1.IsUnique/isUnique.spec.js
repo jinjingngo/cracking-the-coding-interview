@@ -4,7 +4,7 @@ const { expect } = chai;
 
 for (let key in funcs) {
   let func = funcs[key];
-  describe('charpter01-1.1' + key, function () {
+  describe(`charpter01-1.1 ${key}`, function () {
     [
       'abcdefghi',
       'jklpoiuqwerzxcvmnsadf',
