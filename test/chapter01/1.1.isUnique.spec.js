@@ -1,5 +1,5 @@
 import chai from 'chai';
-import * as funcs from '../../../src/chapter01/1.1.IsUnique/isUnique.js';
+import * as funcs from '../../src/chapter01/1.1.isUnique.js';
 const { expect } = chai;
 
 for (let key in funcs) {

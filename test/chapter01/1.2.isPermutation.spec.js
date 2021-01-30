@@ -1,5 +1,5 @@
 import chai from 'chai';
-import * as funcs from '../.././../src/chapter01/1.2.IsPermutation/isPermutation.js';
+import * as funcs from '../.././src/chapter01/1.2.isPermutation.js';
 const { expect } = chai;
 
 for (let key in funcs) {
