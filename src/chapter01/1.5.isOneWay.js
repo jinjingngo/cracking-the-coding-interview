@@ -20,14 +20,14 @@ export const isOneOrLessWay = (str1, str2) => {
   }
 
   let isEdited = false;
-  for (let i = 0, j = 0; i < str1.length && j < str2.length; i++, j++) {
-    if (str1[i] === str2[i]) continue;
+  for (let i = 0, j = 0; i < str1.length && j < str2.length; ++i, ++j) {
+    if (str1[i] === str2[j]) continue;
     // check second edit
-    if (isEdited) false;
+    if (isEdited) return false;
     if (str1.length > str2.length) {
       --j; // decrease j, we are deleting char from str1
     } else if (str1.length < str2.length) {
-      --j; // dcrease i, we are deleting char from str2
+      --i; // dcrease i, we are deleting char from str2
     }
     isEdited = true;
   }
