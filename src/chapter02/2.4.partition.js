@@ -1,0 +1,3 @@
+const twoPointPartition = (head, x) => {
+
+};
