@@ -9,7 +9,7 @@ export const twoPointPartition = (head, x) => {
   const afterHead = helpers.createNode(0);
   let after = afterHead;
 
-  while(head.val) {
+  while(head) {
     // If the origin list node is lesser than the given x,
     // assign it to the before list.
     if (head.val < x) {

@@ -46,7 +46,8 @@ for (let key in funcs) {
     ].forEach(context => {
       it(`partitioning list ${context.list} around ${context.value}`, function () {
         const list = helpers.arrayToLinkedList(context.list);
-        expect(helpers.linkedListToArray(func(list, context.value))).to.eql(context.expected);
+        const partitioned = func(list, context.value);
+        expect(helpers.linkedListToArray(partitioned)).to.eql(context.expected);
       });
     });
   });
