@@ -55,7 +55,7 @@ export const pushSingle = (list, value) => {
   }
 };
 
-export const  push = (list, ...rest) => {
+export const push = (list, ...rest) => {
   for (let i = 0; i < rest.length; ++i) {
     pushSingle(list, rest[i]);
   }
