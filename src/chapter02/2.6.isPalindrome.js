@@ -85,6 +85,7 @@ export const isPalindromIterative = (head) => {
   let fast = clonedHead;
   let slow = clonedHead;
   
+  // This is a reversed stack, mimic of JavaScript Array
   const stack = [];
   /**
    * Push elements from first half of linked list onto stack.
