@@ -114,39 +114,39 @@ export const isPalindromIterative = (head) => {
   return true;
 };
 
-export const isPalindromeRecursive = (head) => {
-  class Result {
-    constructor (head, bool) {
-      this.node = head;
-      this.bool = bool;
-    }
-  }
+// export const isPalindromeRecursive = (head) => {
+//   class Result {
+//     constructor (head, bool) {
+//       this.node = head;
+//       this.bool = bool;
+//     }
+//   }
 
-  const recursive = (head, length) => {
-    if (!head || length <= 0) { // Even number of nodes
-      return new Result(head, true);
-    } else { // Odd number of nodes
-      return new Result(head.next, true);
-    }
+//   const recursive = (head, length) => {
+//     if (!head || length <= 0) { // Even number of nodes
+//       return new Result(head, true);
+//     } else { // Odd number of nodes
+//       return new Result(head.next, true);
+//     }
 
-    // Resurse on sublist
-    // eslint-disable-next-line no-unreachable
-    const res = recursive(head.next, length - 2);
+//     // Resurse on sublist
+//     // eslint-disable-next-line no-unreachable
+//     const res = recursive(head.next, length - 2);
 
-    // If child calls are not a palindrome, pass back up a failure
-    if (!res.bool || !res.node) {
-      return res;
-    }
+//     // If child calls are not a palindrome, pass back up a failure
+//     if (!res.bool || !res.node) {
+//       return res;
+//     }
 
-    // Check if matches corresponding node on other side.
-    res.bool = head.val === res.node.val;
+//     // Check if matches corresponding node on other side.
+//     res.bool = head.val === res.node.val;
 
-    // Return corresponding node
-    res.node = res.node.next;
-    return res;
-  };
+//     // Return corresponding node
+//     res.node = res.node.next;
+//     return res;
+//   };
 
-  const length = helpers.getLength(head);
-  const result = recursive(head, length);
-  return result.bool;
-};
+//   const length = helpers.getLength(head);
+//   const result = recursive(head, length);
+//   return result.bool;
+// };
